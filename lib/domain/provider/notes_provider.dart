@@ -15,7 +15,7 @@ class NotesProvider extends ChangeNotifier{
 
 //! View
   Future<void> addNote(BuildContext context) async{
-//*добовление
+
     await HiveBox.notes.add(
       NotesData(
         title: titleController.text.isNotEmpty ? titleController.text : 'Title',
@@ -25,7 +25,7 @@ class NotesProvider extends ChangeNotifier{
   }
 
 
-//* Удаление
+//* Deleting
 
   Future<void> deleteNote(int index) async{
 
@@ -43,7 +43,7 @@ class NotesProvider extends ChangeNotifier{
   Future<void> onCheck(int index, List<NotesData> allNotes) async{
   await HiveBox.notes.putAt(index,
   NotesData(
-  title: allNotes[index].title,//! мы меняем данные полностью
+  title: allNotes[index].title,//! changing the data entirly 
   text: allNotes[index].text,
   isChecked: !allNotes[index].isChecked
 

@@ -3,5 +3,5 @@ import 'package:to_do_app/domain/database/notes_data.dart';
 
 abstract class HiveBox{
 
-  static final notes = Hive.box<NotesData>('note');//! принимает значения только для класса NoteData
+  static final notes = Hive.box<NotesData>('note');//! gets fata only for NoteData
 }

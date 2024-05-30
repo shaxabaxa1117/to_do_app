@@ -13,7 +13,7 @@ Future<void> main() async {
   await Hive.initFlutter();
   Hive.registerAdapter(NotesDataAdapter()); 
 
-  await Hive.openBox<NotesData>('note');//! стандарт для подключения HIVE
+  await Hive.openBox<NotesData>('note');//! standart usage of HIVE
 
 
 
