@@ -49,7 +49,7 @@ class FormWidget extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                func(); //! the func 
+                func(); //! the func  that triggers addNote in addnote_page.dart
               },
               child: Text(
                 buttonName,

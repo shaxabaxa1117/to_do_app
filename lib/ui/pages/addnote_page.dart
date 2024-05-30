@@ -30,6 +30,9 @@ class AddNotePage extends StatelessWidget {
         ),
       ),
       body: FormWidget(
+        //    final titleController = context.read<NotesProvider>().titleController;
+        //    final textController = context.read<NotesProvider>().textController;
+        
         buttonName: 'Add',
         func: () => model.addNote(context)//! adding to hive
         
